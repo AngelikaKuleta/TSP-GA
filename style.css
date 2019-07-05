@@ -1,0 +1,50 @@
+body, ul, li, h1 {
+    margin: 0; 
+    padding: 0;
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+h1 {
+    display: block;
+    text-align: left;
+    margin: 50px 0 0 50px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.data {
+    margin: 50px;
+}
+
+.data li {
+    display: flex;
+}
+
+.data label {
+    display: block;
+    width: 100px;
+}
+
+input {
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+}
+
+.data input[type="number"] {
+    display: block;
+    width: 80px;
+}
+
+#result {
+    margin-top: 50px;
+}

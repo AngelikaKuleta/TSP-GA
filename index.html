@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The traveling salesman problem</h1>
+    <div class="content">
+        <canvas id="graph" width="500" height="500"></canvas>
+        <div class="data">
+            <div id="initial">
+                <ul>
+                    <li>
+                        <label for="population">population</label>
+                        <input type="number" id="population" name="population" value=100 min=10 max=1000>
+                    </li>
+                    <li>
+                        <label for="mrate">mutation rate</label>
+                        <input type="number" id="mrate" name="mrate" value=0.05 min=0 max=1 step="0.01">
+                    </li>
+                    <li>
+                        <label for="generations">generations</label>
+                        <input type="number" id="generations" name="generations" value=500 min=10 max=10000>
+                    </li>
+                    <br />
+                    <li>
+                        <input type="submit" id="generate" value="generate">
+                    </li>
+                </ul>    
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>  
+    <script src="index.js"></script>
+</body>
+</html>
